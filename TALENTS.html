@@ -7,47 +7,55 @@
 		grid-template-rows:1fr 3fr 1fr;
 		}
 	.header {
-	    background:red;
-		font-size:2em;
+	    background:grey;
+		font-size:3em;
 		text-align:center;
 		grid-column:span 3;
 	    }
 	.nav {
-	    background:green;
+	    background:white;
 		display:flex;
 		flex-direction:column;
 	    font-size:1.5em;
 		text-align:center;
+		grid-column:span 1;
 	    }
 	.main {
-	    background:blue;
+	    background:grey;
 	    font-size:1.5em;
 		text-align:center;
-		}
-	.aside {
-	    background:orange;
-	    font-size:2em;
-		text-align:center;
+		padding:10px;
+		grid-column:span 2;
 		}
 	.footer {
-	    background:yellow;
-	    font-size:2em;
+	    background:white;
+	    font-size:1em;
 		text-align:center;
 		grid-column:span 3;                                      
-	
+	        padding:10px;
 		}
 		
 	@media only screen and (max-width:600px) {
 	    
 		.container{
 		    display:grid;
-			border:1px solid black;
-			grid-template-rows:1fr 3fr 1fr 1fr;
+			border:5px solid black;
+			 grid-template-columns: 1fr 3fr;
+		  grid-template-rows:1fr 3fr 1fr;
+		  margin-right:auto;
+		  margin-left:auto;
  		    }
+		.header {
+	    background:red;
+		font-size:3em;
+		text-align:center;
+		grid-column:span 3;
 		.nav {
 	    background:green;
 	    font-size:2em;
-		text-align:center;
+	    text-align:center;
+            grid-column:span 1;
+			
 	    }
 	.main {
 	    background:blue;
@@ -55,25 +63,30 @@
 		text-align:center;
 		grid-column:span 2;
 		}
-		.aside {
-	    background:orange;
-	    font-size:2em;
+	.footer {
+	    background:yellow;
+	    font-size:1em;
 		text-align:center;
-		grid-column:span 3;
-		}	
+		grid-column:span 3;                                      
+	        padding:10px;
+		}
+		
 	 }
 	 @media only screen and (max-width:300px) {
 	    
 		.container{
 		    display:grid;
-			border:1px solid black;
-			grid-template-rows:1fr 1fr 5fr 1fr 1fr;
+			border:5px solid black;
+			 grid-template-rows:1fr 1fr 3fr 1fr;
+		  margin-right:auto;
+		  margin-left:auto;
  		    }
 		.header {
 	    background:red;
 		font-size:2em;
 		text-align:center;
 		grid-column:span 3;
+		
 	    }
 	.nav {
 	    background:green;
@@ -87,18 +100,11 @@
 		text-align:center;
 		grid-column:span 3;
 		}
-	.aside {
-	    background:orange;
-	    font-size:2em;
-		text-align:center;
-		grid-column:span 3;
-		}
 	.footer {
 	    background:yellow;
 	    font-size:2em;
-		text-align:center;
-		grid-column:span 3;                                      
-	
+		text-align:center;                               
+	grid-column:span 3;
 		}
 	
 	
@@ -111,12 +117,11 @@
 
 <div class=container>	
    
-    <div class=header>TALENTS</div>
+    <div class=header>MY TALENTS</div>
 	<div class=nav><a href=index.html>MAIN</a>
 	<a href=ABOUT.html>ABOUT ME</a><a href=SKILLS.html>MY SKILLS</a></div>
-	<div class=main>I play soccer, basketball, volleyball, etc.</div>
-	<div class=aside>ASIDE</div>
-	<div class=footer>FOOTER</div>
+	<div class=main>I have a talent for Singing,and playing football, Because when I was young my brother played this sport,<br> And when I played it; I was inlove with the sport.<br> And when my brother played for kaya in the middle in the game, he got injured and never played again; and I am trying to continue his legacy and making him proud,<br>This is why that I most definitely have a talent for sports.</br></br></br></div>
+	<div class=footer><a href=copyright.html>© Under The Terms and Conditions of the GO JOHN JACOB ACT 2023</a></div>
 	
 	</div>
 </body>
